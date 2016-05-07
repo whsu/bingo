@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BINGO!</title>
+  <link rel="stylesheet" type="text/css" href="bingo.css">
+</head>
+<body>
+    <div id="main">
+    <div id="toppanel">
+      <div id="die0" class="die">?</div><div id="die1" class="die">?</div>
+      <button id="startpause">Start</button>
+      <div id="timer">0:00</div>
+    </div>
+    <hr>
+    <table border="1">
+      <tr>
+        <td id="c00">?</td>
+        <td id="c01">?</td>
+        <td id="c02">?</td>
+        <td id="c03">?</td>
+        <td id="c04">?</td>
+      </tr>
+      <tr>
+        <td id="c10">?</td>
+        <td id="c11">?</td>
+        <td id="c12">?</td>
+        <td id="c13">?</td>
+        <td id="c14">?</td>
+      </tr>
+      <tr>
+        <td id="c20">?</td>
+        <td id="c21">?</td>
+        <td id="c22">?</td>
+        <td id="c23">?</td>
+        <td id="c24">?</td>
+      </tr>
+      <tr>
+        <td id="c30">?</td>
+        <td id="c31">?</td>
+        <td id="c32">?</td>
+        <td id="c33">?</td>
+        <td id="c34">?</td>
+      </tr>
+      <tr>
+        <td id="c40">?</td>
+        <td id="c41">?</td>
+        <td id="c42">?</td>
+        <td id="c43">?</td>
+        <td id="c44">?</td>
+      </tr>
+    </table>
+  </div>
+  <div id="instruction">
+    <p>Click Start to begin. Each turn has 30 seconds.</p>
+    <p>At each turn of the game, two numbers are generated on the top left. Mark
+    off up to three numbers by clicking them on the bingo card:</p>
+    <ul>
+      <li>a multiple of the first number,</li>
+      <li>a multiple of the second number, and</li>
+      <li>a multiple of the sum of the two numbers.</li>
+    </ul>
+    <p>Correct numbers are marked in green.</p>
+    <p>Incorrect numbers are marked in red and will be unavailable
+       for one turn.</p>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="bingo.js"></script>
+  <script>
+    $(document).ready(init);
+  </script>
+</body>
+</html>

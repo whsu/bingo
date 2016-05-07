@@ -1,0 +1,30 @@
+#main {width:100%;}
+#toppanel {position:relative; width:100%;}
+.die {display:inline-block; border:1px black solid; width:20vw;
+      height:10vw; line-height:10vw; text-align:center; font-size:5vw;}
+#die0 {border-right-width:0;}
+#startpause {text-align:center; margin-left:5vw; margin-right:5vw;
+        font-size:5vw;}
+#timer {text-align:center; font-size:5vw; float:right;}
+#instructions {width:100%;}
+
+table {border-collapse:collapse; width:100%; height:100%;}
+td {text-align:center; cursor:default; width:20vw; height:20vw; font-size:6vw;}
+td.empty {background-color:white;}
+td.correct {background-color:green;}
+td.incorrect {background-color:red;}
+td.blocked {background-color:grey;}
+
+@media (min-width:630px) {
+  #main {width:600px}
+  #toppanel {width:600px;}
+  td {width:120px; height:120px; font-size:36px;}
+  .die {width:120px; height:60px; line-height:60px; font-size:30px;}
+  #startpause {margin-left:60px; margin-right:60px; font-size:30px;}
+  #timer {font-size:30px;}
+  #instruction {width:600px;}
+}
+
+@media (min-width: 1000px) {
+  #instruction {position:absolute; left:650px; top:50px; width:300px;}
+}
